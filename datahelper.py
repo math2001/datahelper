@@ -13,7 +13,7 @@ class Data:
     def median(self):
         length = len(self.numbers)
         if length % 2 == 0:
-            return Data(*self.numbers[int(length):int(length)+1])
+            return Data(*self.numbers[int(length / 2):int(length / 2)+2]).mean
         else:
             return self.numbers[length // 2]
 
